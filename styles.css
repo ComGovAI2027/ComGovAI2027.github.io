@@ -101,3 +101,37 @@
  .overview-row .about-grid{margin:0;padding:0}.workshop-content .welcome-lead{font-size:20px}
  .city-banner img{height:175px}
 }
+
+/* ComGovAI: three organizers and a flexible half-day program. */
+.conference-mark.comgovai-mark{flex-basis:124px;font-size:20px;letter-spacing:-.7px;height:auto;padding:20px 12px;line-height:1.3}
+.comgovai-mark>span{font-size:15px;letter-spacing:1px;margin-top:8px;font-weight:400}
+.people.organizer-rows{display:block}
+.people.organizer-rows article{display:grid;grid-template-columns:300px minmax(0,1fr);gap:32px;padding:22px 0;border-top:1px solid var(--line)}
+.organizer-rows h3{margin:0 0 6px}.organizer-rows .profile-links{display:flex;flex-wrap:wrap;gap:10px 22px;padding-top:6px}
+.organizer-rows .person-identity p:last-child{margin-bottom:0}.organizer-rows aside{margin-top:8px}
+.program-flow{list-style:none;counter-reset:session;padding:0;margin:0;border-top:2px solid var(--navy)}
+.program-flow li{counter-increment:session;display:grid;grid-template-columns:32px 180px minmax(0,1fr);gap:18px;padding:16px 12px;border-bottom:1px solid var(--line)}
+.program-flow li:before{content:counter(session,decimal-leading-zero);color:var(--blue);font-size:12px;padding-top:3px}
+.program-flow h3{font-size:15px;margin:0}.workshop-content .program-flow p{margin:0;font-size:14px}
+@media(max-width:800px){.people.organizer-rows article{grid-template-columns:240px minmax(0,1fr);gap:24px}.program-flow li{grid-template-columns:26px 140px minmax(0,1fr);gap:12px}}
+@media(max-width:560px){.people.organizer-rows article{grid-template-columns:1fr;gap:14px}.program-flow li{grid-template-columns:26px minmax(0,1fr)}.program-flow p{grid-column:2}.conference-mark.comgovai-mark{flex-basis:78px;font-size:13px;padding:13px 8px}.comgovai-mark>span{font-size:10px}}
+
+.welcome-goals{margin:12px 0 0;padding-left:23px;color:var(--navy);font-size:15px;line-height:1.75}
+.welcome-goals li:last-child{margin-bottom:0}
+.welcome-goals li{padding-left:5px;margin-bottom:10px}
+.welcome-goals li::marker{color:var(--blue);font-weight:600}
+.welcome-goals strong,.about-grid>div>p>strong{color:var(--navy);font-weight:600}
+.organizer-rows .profile-links{flex-direction:column;align-items:flex-start;gap:6px}
+.organizer-rows .person-description{min-width:0}
+.organizer-rows .profile-links a{max-width:100%;overflow-wrap:anywhere}
+
+/* Organizer profiles use the original top-to-bottom card structure. */
+.people.organizer-rows{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+.people.organizer-rows article{display:flex;flex-direction:column;gap:16px;padding:20px 0 0;min-width:0;border-top:2px solid #d1deea}
+.organizer-rows .person-description{display:flex;flex-direction:column;flex:1}
+.organizer-rows .person-description .profile-links{margin-top:auto;padding-top:10px}
+.organizer-rows aside{grid-column:1/-1;margin-top:0}
+@media(max-width:800px){
+ .people.organizer-rows{grid-template-columns:1fr;gap:22px}
+ .people.organizer-rows article{gap:12px}
+}
