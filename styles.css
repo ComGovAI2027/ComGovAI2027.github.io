@@ -126,7 +126,7 @@
 .organizer-rows .profile-links a{max-width:100%;overflow-wrap:anywhere}
 
 /* Organizer profiles use the original top-to-bottom card structure. */
-.people.organizer-rows{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+.people.organizer-rows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
 .people.organizer-rows article{display:flex;flex-direction:column;gap:16px;padding:20px 0 0;min-width:0;border-top:2px solid #d1deea}
 .organizer-rows .person-description{display:flex;flex-direction:column;flex:1}
 .organizer-rows .person-description .profile-links{margin-top:auto;padding-top:10px}
@@ -135,3 +135,8 @@
  .people.organizer-rows{grid-template-columns:1fr;gap:22px}
  .people.organizer-rows article{gap:12px}
 }
+
+.organizer-photo{display:block;width:160px;height:160px;object-fit:cover;object-position:center 25%;background:var(--pale);border-radius:4px}
+.photo-xin-tan{object-position:center 15%}.photo-yuxia-zhang{object-position:center 25%}.photo-igor-steinmacher{object-position:center 20%}
+.organizer-rows .person-description .profile-links{padding-top:0;margin-bottom:0}
+.city-banner picture{display:block}
